@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - SCHOOLMATE</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background-color: #f8f9fb; color: #333; }
+    header { background: #0a1a3f; padding: 15px; text-align: center; color: white; position: sticky; top: 0; z-index: 1000; }
+    header h1 { margin: 0; font-size: 28px; color: gold; }
+
+    nav { background: #142857; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: gold; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601933471596-dcab2f2cd11c?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 40px; margin-bottom: 10px; animation: slideUp 1s ease; }
+    .hero p { font-size: 18px; animation: fadeIn 2s ease; }
+
+    .faq-section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .faq-section h3 { color: #0a1a3f; font-size: 24px; margin-bottom: 20px; }
+    .faq-item { background: white; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); overflow: hidden; cursor: pointer; transition: transform 0.25s ease; }
+    .faq-item:hover { transform: translateY(-4px); }
+    .faq-question { padding: 16px; font-weight: 600; position: relative; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; padding: 0 16px; background: #f4f7fb; }
+    .faq-item.active .faq-answer { padding: 16px; max-height: 300px; }
+    .faq-item::after { content: '+'; position: absolute; right: 20px; font-weight: 700; transition: transform 0.3s ease; }
+    .faq-item.active::after { content: '-'; }
+
+    footer { background: #0a1a3f; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SCHOOLMATE</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Frequently Asked Questions</h2>
+    <p>Find answers to common questions about our products, ordering, and delivery.</p>
+  </section>
+
+  <section class="faq-section">
+    <h3>General Questions</h3>
+
+    <div class="faq-item">
+      <div class="faq-question">How can I place an order?</div>
+      <div class="faq-answer">You can place an order easily via WhatsApp: <a href="https://wa.me/256750350232" target="_blank">+256 750350232</a>. Simply send us the product name and quantity.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you deliver nationwide?</div>
+      <div class="faq-answer">Yes, we deliver to all regions across Uganda, no matter the order size.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is there a minimum order?</div>
+      <div class="faq-answer">No, we accept orders of any size. Every customer is important to us.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What payment methods do you accept?</div>
+      <div class="faq-answer">We accept Mobile Money (MTN, Airtel), bank transfers, and cash on delivery depending on your location.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I return a product if I’m not satisfied?</div>
+      <div class="faq-answer">Yes! We have a 30-day return policy on all items, provided they are unused and in their original packaging.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>📱 WhatsApp: +256 750350232</p>
+    <p>📍 Delivery available across Uganda</p>
+    <p>&copy; 2025 SCHOOLMATE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

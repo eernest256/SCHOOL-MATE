@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SCHOOLMATE</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background-color: #f8f9fb; color: #333; }
+    header { background: #0a1a3f; padding: 15px; text-align: center; color: white; position: sticky; top: 0; z-index: 1000; }
+    header h1 { margin: 0; font-size: 28px; color: gold; }
+
+    nav { background: #142857; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: gold; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1590073248898-bf0b8cf0d74b?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 40px; margin-bottom: 10px; animation: slideUp 1s ease; }
+    .hero p { font-size: 18px; animation: fadeIn 2s ease; }
+
+    .contact-section { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    .contact-section h3 { color: #0a1a3f; font-size: 24px; margin-bottom: 20px; }
+    .contact-section form { display: flex; flex-direction: column; gap: 15px; }
+    .contact-section input, .contact-section textarea { padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; width: 100%; }
+    .contact-section button { padding: 12px; border-radius: 8px; border: none; background: #0a1a3f; color: gold; font-weight: 700; cursor: pointer; transition: 0.3s; }
+    .contact-section button:hover { background: gold; color: #0a1a3f; }
+
+    footer { background: #0a1a3f; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SCHOOLMATE</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Contact SCHOOLMATE</h2>
+    <p>Have questions or need help with your order? Reach out to us!</p>
+  </section>
+
+  <section class="contact-section">
+    <h3>Send Us a Message</h3>
+    <form onsubmit="submitForm(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:20px;">Or chat directly on WhatsApp: <a href="https://wa.me/256750350232" target="_blank">+256 750350232</a></p>
+  </section>
+
+  <footer>
+    <p>📱 WhatsApp: +256 750350232</p>
+    <p>📍 Delivery available across Uganda</p>
+    <p>&copy; 2025 SCHOOLMATE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const form = e.target;
+      const name = encodeURIComponent(form.name.value);
+      const email = encodeURIComponent(form.email.value);
+      const msg = encodeURIComponent(form.message.value);
+      const whatsappMsg = `Hello SCHOOLMATE 👋 I am ${name} (${email}) and I want to say: ${msg}`;
+      window.open(`https://wa.me/256750350232?text=${whatsappMsg}`, '_blank');
+      alert('Redirecting you to WhatsApp to send your message!');
+      form.reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendors - SCHOOLMATE</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background-color: #f8f9fb; color: #333; }
+    header { background: #0a1a3f; padding: 15px; text-align: center; color: white; position: sticky; top: 0; z-index: 1000; }
+    header h1 { margin: 0; font-size: 28px; color: gold; }
+
+    nav { background: #142857; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: gold; }
+
+    .hero {
+      background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhIQEhMVFRUSEhAVFRUQEA8PDw8VFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBAIFAAEGB//EADkQAAICAQIEAwYEBQMFAQAAAAECAAMRBCEFEjFBBlFhEyIycYGRQlKhsRSCweHwYnLRFSNEU6Iz/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAIBEBAQACAgMBAQEBAAAAAAAAAAECESExAxJBUWFxIv/aAAwDAQACEQMRAD8A8hWFUQIMKjQU0EKwbiHTBm2ri7Poma8yx4XoVcHfDDG2QGP+3PWS0NKMwDCX6cDrX38kgdRmLlnrg+Hj+kKan5QnMcEe95gZ6RmrSgMoXYQ5r8v06RrTUfiPbaSyvCku60U3k1Wbbr9ZNBCRNFjdKwSLGqVisnWkI6ySCEZZi2lkEJyzYEMqQwKJpF3lz+GVukr3Et2qIWAtUrruYIrHCvWAtSHYkbVlddXLRli1tBLBVGSxAAHUknAAgNFY1cUvqnQ8V4Jfp8G2sqG6HIYZ8sjvKe4RpdtYptQkqb1l5qllPqBvKYkpRlgXWMPAsY5KWcQZhngjGLQrIEw9ggcRoDU1JTULNTJkyZjaAxhNO0s6+DN1AJx27/3lvpuHAr6zny8mnTh4t9qTScMLbk4jV2lUcqjPqTvHihG0jsqqx/E2M+Ulc7atMJIVo0LZ5lxt57S30zHl5Sc75M3/AApG/n9pNKwe+Jt77CyxJVj7KFX5D7kxeuk/OStJPpBeS9AgQtayIWESG0DNYjVCxRDHKmgYZBGgm0WQxuszFpaxJuswluJFTMCz4auSJa6ptsRbgyDrHtYoxmYtU1teInYI5dAOswkSN4Si812V3AAmtlbB6HHaSdYDUNtBo0q48WeKU1NK1JWy++GJfl2wCMDB9es4q5Y2TnMW1EeTTVV6mUuq6y2ufMp9Yd5TElJ2tAEzdzTZXaOnbyC0hCNIGMwNsDC2wUaFZIyUjCzJqbmpmegrqXqPvDYR6jVo4yNiR/mZvTstq8rdf1iGt4U9ZJHTrtOXUrulsGs0b5yBkehzAa/T81TLuCNxt3jfCbSykdCJZrnOGGfXtE9eTS8Knhevdq0Qo2QMEkECWzaPKhsfOO6dB5RwuMBT3mob0o9QfZAN2845TStycw6+kPq9AHras9/0nO8D1TUXGhztnA/pA3Zm+kocNIK8ueNVKVyeh7+U4LiDW0sQScdj2Ij4zaeX/PLqkeOUtOB0fGrA3mJa/wDX2HaG+Okmcrs62jVZnHaXxKucNL/QcUrfoYtxsbe1m6wWJp7h5wS2jPWDTLzhV3aP6x9pQaW3BlhZfkQFrTmBaRayDZ5hRsMr9VZG7DK3iHSNIJal94WnR+1f2eeXYknrsPISt09vvTXFdY9WLKzhh0Imu9cH4+l+N8OOncDm5lYEg4wduoInOalt5Ya3idt3/ctbJAwMAAAegEqWbMphLJz2lnlN8JGkYzF2baNWe6krEfMpHPexGEGTDBgRiAMJwrYOEtg40Bk1NzULNTJuamZ6pqdEB7yZBG+P6RnRarm9xx94ehpq/S53HX95yO4mOGGtyy7g+UtakDAGR0lpHuP+sYarfI6H7QbZiV4wBAatjzADtiMAjI/zEJbWGgYanBAPpOW8VaHlZbh9Z0B1QpQs4JAOPdAJ3ldxDjOnsXlIsGfNB/zNG3poWe10jZ6qsV4VSmqpNdgyQMZ7yGk4hTUrK3MVYEfDiJ8A1ddbnBLZzsqOT+gm1R3Lw5viuh/h7Cn2PpEeYmdv4l4X/ElDWQpGc8ws3z/LKjX+DtVVW1gAdUUs/Jzcyr54I3Etj5Mb95c+fjynzhRpG9HYynmBxEUcQxvlLE5VyvEbD+LpBDiFpb3TEfbbYjOnIAi+p9rVOL2jvHq/ELgbiUPtRA22k7CL6xtrhvEblsRpePt3EodNp8bmHKzesF1eh4kHkOMPhTKfhT4YSz4mQ4AESzQxUcMpax89sx/xTw8isMvbrGuH1ezxt84/rdZzjkCjHruTBvRtbcRTwp7VAHuj8xH7DvHdZ4aUaWy2rJbTlGfJybK3yrH5qQp+RaXbS38J4ay2pgCLKWBB3DYI2P0JmmV2GWEk28g1Vh5cRWmXnjDh60WBUBCkONznDo7Iw+wU/wA055WnTOnLeMjLbbyLGGvX3AYGuK2+UHXaAhtQYGPGjJkyZCKMybmpmeutbjp+8PTqR+3XAxObHFu2fr5wNnGQP7Tl07dx23IGhKzybHcGcRR4hdTt/eX3DfE9b+5YOXPftFsFd3UbgiaVo1SRygggg9D5yu8Q6sU1ZUgWOcIOuPNvp+5EVoJx0D2H8y/1nI6hgMEnziP8bYGZmcsSpX3iWxkg536dIrZaSc7k/eNBuJrVarOwH3jvhjUKLQr9G/T1lJZaQMlT5bKTv5TNM9hOVHJ6n4/oO01m5yONmN4ek22IrciDnY/hAJb646RPxdxnU0ULWlZJtrsUkEn2S4AJcL1699tpRcC4sUsVCcqxAPmc9z5md5bXQg5jjcbYx94k1jRz3Y8MSrEKojHG3Q6i41Y9mbDy8vw4749M5iYad05jz+qMpOYdXMUV4Tnm0MplbMRvT3rKprIq+pOdoPUfbTrVcHpCIs5vQ685xOo0OlstAwMD8x6fTziZcdqY32bqTJAEudJpyuSd/LMXVUq2RTY/TPYfM9vpJKr8wd26Zwo2QbEdPr3kMstqzHRqyyQqfLKD5jMUv1gErL+JHtNI1unb8Y4ThBbXuMbgSt4DqeTUVN25wp+Te7/WOeD/ABGLB7C3rjG/4hIeIuEmlvaJ8DHII/CY2iS/KpfHPBBbZemeVqredM9GW5FL58hzKu887u0rVtyOpUjzHX1E9Y8Yp7XktX/ydG3T/wBlJ51HzLMB9Jwuj1FVoHtic4bBOD1wRnz/ALy1qPrv/VHdZ7vL6QKy24nwRkX2tZDp35TzFfr3EqBNE7LvkO2Dk7ZCUgsmTJkzNTU3NTMuWtJmhNKJLMkvElaHS6KkzRftF0aXTreAceakEfGuDhSds9orrNY9jGyxuZj9lHkB2ErdImBv3hmeRs5Xx6Yw85lThTmQxA2t5Q6belxchKhifi6dyYgW+gl7wW+t1UOPgABHnF/FWpqZq0VECpzHbCsSR3byJAi496NneNxnDdCjENZYqDI/1OfkJ2Gr0ps5VVAUx8Tt7zZ8gNhOK09iVUu2QCGChO56+9zZ36TpOE6+1tOvMCgz1Ockeg7xspqkl3N7cx4p8NCsNbV8IO4/4nIkz2Z9OttRQ9CMb9T6zzfxH4banLrun7S3jz+VzeXD7FErTbWxcvIkyyKVlsNoOH2XNyopP7D5mP8ACvD1tuGYcq/6up+k7fR1pRWEGAANz3Y+Zks/JJ0ph47e1bwjw3XThrPff8o3Uf8AMu7HJGDsPJdvuZV6ji6jZd5XXcQZu+PlIXeXa81j0vLdYqjAx9JWaniBbpEOfzmuaGYt7JOxPUwbTTGazGLYlXYVIZTgg5BHaeleFuOJqqzp7sc2Mb9/UTzIyemvZGDocMpyCJi16LxLStXQUO7aS9LFP5qrCVP0y2T8p5TrtOKr7aeyWMFx+TOUz81Kz2HgXFE11JVsCwVtXYO5VxjI+uD9J5V40pKXq5GC9Shv99RKN+gSVxu4SpaPi7pgDoP5h5feMtwuvUnmUityT0HuE/6l7fMTntPd/neOV6kjcHBgs10MsvZTjHB7qD/3F909HX3qz9e3yOJWz0DgnFGGzEYPUP8ACRJcc8JV3g26UKlmN6wQKrD5L+Vv0hx8nyhl4/seezJO6pkYowKspIIIwVI7GDMomyam5qZlspkeeLG6SqDN0EnpTYjvGdFVn3j07esjTpQN23/aNGyJlfxXDH7TGZotFw+ZNzE0r7JM+ZBmEhzyMJdmtLewb3TgnaXFPhK6wB+ddzk8xI+225nOC3G863Q8eJrVR1xjr+8F3OjSyzkG/hn8MVI5T5sRnk9BnMe0vFfbEAn3V/8Aow2nt07KUtK2F8E83QeWPLvAJwylWzUxx+XPMB8jN85CWb4dCLwELHZVBJPoJxz8Ve52DLzISQExkAevnLrXWBk9mxwmxIBwWx0BPlKuzidVY5UA/lEXsdyAUcCRWyqhF9cs3y37Sa6XS0EsFXm6+ePkO0r9TxZ26bD0le9ncmNMb9qdznyLrU8aJ2QfWVl2oZviMTe6BfUDuY8wTuZ0OITnEpm1flvJozHqcfKN6B7rQ2ibFw84gla+sn/m0GoOzntxINYPOJ2v3PyG0Crnp1m9W9lkuoHTIm/bL5iV1qgj1i1Ojdj1wM9SYZjC3Kui0HE3psW2tsMv2I7g+kY8aahdTUNUhAHtF5kx71buCGGfI8oMql4MQPj3xnpE9TQ/wByQcZHwjI6Qyc8NbddFqZa6DQvYwCrnp9PUzeh4WdizLtvjO8uqNcK1wPd37QZZDhj+m9Lwsr8TKD8yZ0PDyFxjBHXactRxnfeXvD763GzAHyzgSVVS8YeFk1dZuqAF6D5C0D8LevkZ5LbWVJVgQQcEEYII7ET2miyxdxuN+hzKbxX4fTVr7WvC3KOuMCweTf0Mphnrio5YvLJqG1GndGKOpDKcEEHaZLJmKdMOp3jimDWEEjXRjNN5m5sGHHTJU488HH3iHL80w2jvNGgu22w23O22Ya3S1KSebIGQABkn13jaJcgFbJwASfQTTrZt7jb9NsZ69M/IxyvVKpwhBO3QAHPXc9xFdRr1AG/vDPTYDfOw7QyBcv6e0ulrUc1wZj15RlRjbucZ+8hqtYzf/miopAwOY9MdO2N/3la3ESTzd8gjc5B8/WDZnY5z+gH7dIdF9t9G9PaS2HYAbZIyWxLuriaonLXuPzN1MoNPoy25jS6IDaLlo+PsY1GuLfE/6xU6lPPPy3jH/S064it9YXoPsJpZ1Asy+oNrV9ftAPqge8DdZ5iBSvMpJEraLZeT0gvZnvGEqhOSb2b1CrrjldUlpq5a6TRE42k8slccSNejJ6Q92m5FyfKdXoOFbdJT+MEHMlS9epxFl3TWSOborNh8hHLqRUoYhWGD3wY3VouRB039cSj4pdzORnKrtKTlO8QD2hO/QSVd5BEikCDlxHTdXo9SGXDAZx1lFdn2hU+cZrbAkbKwx5gd4k4VvOjemA6d4PWhgMtj0xI0od/SQ1b9BF+m+IVbx1HYdCRIaOjbJh7YLeRk4WfC+LOhwSf6ToKeJq3QjPecdUx5TtJvn4kPzEGgrr3esnJVSfkDNTmU4iwABmQ6oOZLwgDYyBt5npFcY3zn67wbahjhcnHlnaUkJ7m+cDcnOO3aE1PFHswD0UYAGw+0UTTE9Y/RyrjOB8xma6CW1BdTYfw5GCMY2A9PWCTSZObG5R13O8aGtK9MfOVur1BY7nOZo1/pqw6blIVSTnYknMR9mD0mgsKohDtJFHSM6fbMVVYb2gEWmh5Lfl9Y9oaC55u37yjrbmZR5mdZp15VHyk8+FsOQNdZyjaUOqs9c56S41rDG/nKMnLFj26TYQPJQjR59ZIpia55td5RPUTrUwjU7yVe0Mhi2m0Z0GmJInU8Mo3G3SUnCm3nXcOpyMiJT9LJECoT5DM85uuNl1lpGRnA+QnZeJdd7LTnzOwnFUOQBDOijcW1gFIyMEdJyiY795b+I9TzcolQFlcek87useL1n3swtsCOsaJ1cVHIzJIpmtGPdjNS9ZO1aRFbOUbxZTzNN6w74h9DTgZg6g900WwMRey0wtzROxouMNlRa9Weh7Qqanfb6yudoP2m8pInav8A24MyU41UybTeyrzC0oOsjXCIuZS1KGBv0zBlyDk7ybWYG0WLxDVO27MWMLBMIS2iCEV4ISXaZoKHMxhBo0wtnaYdrDgtPM+fKdNY2BtK3g1QCx2xuonPnd10+Oair4mxC7nrKdjsBLDjFnQSsWVwnCXkvIka01UAsapfENbGGFrj1enG0ricx7RWHpEqkW+g0/lOm0DYlLw4y+pwFzEHJyHjfWFrFr7Dcyu09u2IHjeo5tSx8toPnz6SlhJVXxWwl94upyJPiPxQVLR50le2PBKNxC2TNOuWEaF+rrTrhZs7dJsdIK5tpF0Fzlmlii4EV0i941Y82X4OP6Fa0TcwtzxZmhkLlWWCLmSNkgTKJWsE1N5mpitIkkzSLtImZmy0jMkSZmELQeZoyIMLCTMyM2YdM2pjGnTcRdRLHQrjEXIcZur3RjAmaqwAEyCGVPF9VvygyEx3XTcvWE9RYWbM0og0EMku55yMghwshUsMBFVgtCy40CCV1A2juisOZOni/wBJVG9ZfyVsfSB0Jivii7lqPrNjOQyrhTZzOzHuTGu0rqWjYfaUqeNV2vO8FVJ6w7wKmNE72nYYzw5cnMTJlhw1YbxGx7WMBbDkwTDeRXFoGBNWtMLYEXsaaQbUXaLuZJzAMZSJWoMZEtMaQEKYompnNMhZDMzMyZAzJEzJkLIGYpmTIGbzMEyZDGM0JLCiZMi0+I+o1XKspi2TmZMmxnDZ3kVRJqJkyGtB6zGqxMmRKeG6XxHNK28yZEPHR6IiUfjW73cTJkOHYZ9OOqMMbJkyUSl4I6g7wYM1MhIkZZaHpMmTXo2PZwtMBmpknYqHa8XZ5kyNC2hu0CTMmRiUNzITJkxUszJkyZn/2Q==') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 40px; margin-bottom: 10px; animation: slideUp 1s ease; }
+    .hero p { font-size: 18px; animation: fadeIn 2s ease; }
+
+    .vendor-section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .vendor-section h3 { color: #0a1a3f; font-size: 24px; margin-bottom: 20px; }
+    .vendor-section form { display: flex; flex-direction: column; gap: 15px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+    .vendor-section input, .vendor-section textarea { padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; width: 100%; }
+    .vendor-section button { padding: 12px; border-radius: 8px; border: none; background: #0a1a3f; color: gold; font-weight: 700; cursor: pointer; transition: 0.3s; }
+    .vendor-section button:hover { background: gold; color: #0a1a3f; }
+
+    footer { background: #0a1a3f; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SCHOOLMATE</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vendors.html">Vendors</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Join SCHOOLMATE as a Vendor</h2>
+    <p>Submit your products and reach thousands of students across Uganda.</p>
+  </section>
+
+  <section class="vendor-section">
+    <h3>Vendor Application Form</h3>
+    <form onsubmit="submitVendorForm(event)">
+      <input type="text"id="name" name="name" placeholder="Full Name" required>
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+      <input type="text"id="store" name="store" placeholder="Store or Brand Name" required>
+      <textarea id="products" name="products" rows="5" placeholder="List your products or product categories" required></textarea>
+      <textarea id="message" name="message" rows="3" placeholder="Additional information (optional)"></textarea>
+      <button type="button"onclick="sendtowhatsapp()">Submit Request</button>
+    </form>
+    <p style="margin-top:20px;">You can also send your request directly via WhatsApp: <a href="https://wa.me/256750350232" target="_blank">+256 750350232</a></p>
+  </section>
+
+  <footer>
+    <p>📱 WhatsApp: +256 750350232</p>
+    <p>📍 Delivery available across Uganda</p>
+    <p>&copy; 2025 SCHOOLMATE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitVendorForm(e){
+      e.preventDefault();
+      const form = e.target;
+      const name = encodeURIComponent(form.name.value);
+      const email = encodeURIComponent(form.email.value);
+      const phone = encodeURIComponent(form.phone.value);
+      const store = encodeURIComponent(form.store.value);
+      const products = encodeURIComponent(form.products.value);
+      const message = encodeURIComponent(form.message.value);
+      const whatsappMsg = `Hello SCHOOLMATE 👋 I am ${name} (${email}, ${phone}) representing ${store}. Here are my products: ${products}. ${message}`;
+      window.open(`https://wa.me/256750350232?text=${whatsappMsg}`, '_blank');
+      alert('Redirecting you to WhatsApp to submit your vendor request!');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
